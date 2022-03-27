@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+<form  onsubmit="return validate()"method="post" name="x" >
+
+  Number: <input type="number" name="num1" id="num1" />
+
+  <br />
+  <input type="submit" value="Submit" id="submit" />
+</form>
+<script>
+function validate(){
+var x= document.forms['x']['num1'];
+var y=1000; 
+
+ if(x>y){
+   alert("hello v");
+ };
+}
+</script>
+<script>
+   var sub = document.getElementById("submit")
+   console.log(sub)
+   sub.onclick(function (e) => e.add)
+</script>>
+</body>
+
+</html>
